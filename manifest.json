@@ -1,0 +1,17 @@
+{
+   "content_scripts": [ {
+      "js": [ "js/jquery/jquery.min.js", "js/pdfobject.min.js", "src/inject/inject.js" ],
+      "matches": [ "http://www.amazon.com/*", "https://www.amazon.com/*" ]
+   } ],
+   "default_locale": "en",
+   "description": "Searches and displays ebook results from libgen.org (Library Genesis) when you visit a book page on Amazon",
+   "icons": {
+      "128": "icons/icon128.png",
+      "48": "icons/icon48.png"
+   },
+   "manifest_version": 2,
+   "name": "LibGen",
+   "permissions": [ "http://gen.lib.rus.ec/", "http://bookzz.org/" ],
+   "version": "0.0.4",
+   "web_accessible_resources": [ "images/*" ]
+}
